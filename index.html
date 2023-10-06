@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap');
+
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background-color: #0E4166;
+    }
+
+    #form {
+      background-color: #0B3452;
+    }
+
+    .table-responsive {
+      background-color: #0B3452;
+    }
+
+    td,
+    th {
+      background-color: #CFF4FC !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container  mt-3 ">
+    <h1 class="text-center text-white fw-bold">Bookmarker App</h1>
+    <div id="form" class="px-5 py-5">
+      <label for="name" class="mb-2 text-white fw-bold">Site Name:</label>
+      <input type="text" id="name" placeholder="Book MarkName..." class="form-control">
+      <div id="errorName"></div>
+      <label for="url" class="mb-2 text-white fw-bold mt-4">Site URL:</label>
+      <input type="text" id="url" placeholder="Book MarkURL..." class="form-control">
+      <div id="errorURL"></div>
+      <button id="mainBtn" class="btn btn-primary mt-5 text-center w-100">Add Bookmark</button>
+    </div>
+    <div class="mt-5">
+      <input type="text" id="search" placeholder="search" onclick="" class="w-75 p-2 form-control mx-auto">
+    </div>
+    <div class="table-responsive mt-4 p-3">
+      <table class="table text-center">
+        <thead>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
